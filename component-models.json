@@ -233,11 +233,10 @@
        "value": ""
      },
      {
-      "component": "checkbox",
+      "component": "boolean",
       "name": "showAsHeading",
       "label": "Show quote as heading",
-      "valueType": "boolean",
-      "value": false
+      "valueType": "boolean"
     },
     {
       "component": "select",
