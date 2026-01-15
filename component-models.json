@@ -245,12 +245,12 @@
       "valueType": "string",
       "value": "h2",
       "options": [
-        { "value": "h1", "label": "H1" },
-        { "value": "h2", "label": "H2" },
-        { "value": "h3", "label": "H3" },
-        { "value": "h4", "label": "H4" },
-        { "value": "h5", "label": "H5" },
-        { "value": "h6", "label": "H6" }
+        { "value": "h1", "name": "H1" },
+        { "value": "h2", "name": "H2" },
+        { "value": "h3", "name": "H3" },
+        { "value": "h4", "name": "H4" },
+        { "value": "h5", "name": "H5" },
+        { "value": "h6", "name": "H6" }
       ],
      "condition": { "===": [{"var" : "showAsHeading"}, true] }
     }
