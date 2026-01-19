@@ -2,7 +2,8 @@
   "mappings": [
     "/content/aem-ue-aj-site/:/",
     "/content/aem-ue-aj-site/configuration:/.helix/config.json",
-    "/content/aem-ue-aj-site/metadata:/metadata.json"
+    "/content/aem-ue-aj-site/metadata:/metadata.json",
+    "/content/aem-ue-aj-site/taxonomy:/taxonomy.json"
   ],
   "includes": [
     "/content/aem-ue-aj-site/"
