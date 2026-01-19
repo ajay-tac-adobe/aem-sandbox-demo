@@ -57,3 +57,19 @@
     width: 30px;
     background-color: darkgray;
 }
+
+.quote-suffix {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--text-secondary, #666);
+}
+
+.quote .quote-tag {
+   display: inline-block;
+  margin-top: 8px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  border-radius: 12px;
+  background: var(--overlay-background);
+}

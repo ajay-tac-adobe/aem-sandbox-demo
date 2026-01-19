@@ -253,6 +253,11 @@
         { "value": "h6", "name": "H6" }
       ],
      "condition": { "===": [{"var" : "showAsHeading"}, true] }
+    },
+    {
+      "component": "tag",
+      "name": "tag",
+      "label": "Tag"
     }
    ]
 }

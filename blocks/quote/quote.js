@@ -1,11 +1,10 @@
 import { fetchPlaceholders } from '../../scripts/placeholders.js';
+import { fetchTaxonomy } from '../../scripts/taxonomy.js';
 
 export default async function decorate(block) {
   const placeholders = await fetchPlaceholders();
-  console.log('children', block.children);
+  const taxonomy = await fetchTaxonomy();
   const [quoteWrapper] = block.children;
-  console.log('Quote Wrapper:', quoteWrapper);
-  console.log('Placeholders:', placeholders);
 
   const blockquote = document.createElement('blockquote');
   blockquote.textContent = quoteWrapper.textContent.trim();
@@ -20,5 +19,9 @@ export default async function decorate(block) {
 
     block.append(suffix);
   }
-  
+  const tagEl = document.createElement('span');
+  tagEl.className = 'quote-tag';
+  tagEl.textContent = taxonomy['data'][0]['title'];
+  block.append(tagEl);
+
 }
